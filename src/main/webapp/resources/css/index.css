@@ -1,0 +1,515 @@
+/*这是公用的*/
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: STXingkai;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+
+/*这是背景开始*/
+
+.main_warp {
+	width: 1903px;
+	height: 810px;
+	background: url(../img/warp.jpg) no-repeat;
+	position: relative;
+	margin-top: -1px;
+}
+
+body {
+	Windsor:expression(document.body.onselectstart=document.body.oncontextmenu=function() {
+		return false;
+	}
+	);
+}
+
+
+/*这是背景结束*/
+
+
+/*这是数据分析开始*/
+
+.dataAnalysis {
+	width: 880px;
+	height: 350px;
+	float: left;
+	margin-top: 20px;
+	margin-left: 70px;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 0px 0px 5px 5px;
+}
+
+.dataTitle {
+	width: 350px;
+	height: 40px;
+	background: rgba(146, 57, 248, 0.4);
+	font-size: 28px;
+	color: #02ddd3;
+	text-align: center;
+	line-height: 40px;
+}
+
+.triangle-topright {
+	border-top: 40px solid rgba(146, 57, 248, 0.4);
+	border-right: 30px solid transparent;
+	float: left;
+	margin-left: 350px;
+	margin-top: -40px;
+}
+
+.rankingTitle {
+	width: 400px;
+	height: 30px;
+	float: left;
+	margin-top: -30px;
+	margin-left: 420px;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.rankingTitle>li {
+	width: 60px;
+	height: 30px;
+	margin-left: 55px;
+	float: left;
+	text-align: right;
+	line-height: 33px;
+}
+/**数据分析 表格头 开始*/
+.dataAnalysis_header{
+	width: 630px;
+	height: 30px;
+	float: left;
+	margin-top: 20px;
+	margin-left: 100px;
+	font-size: 18px;
+	color: #ffffff;
+	display: none;
+}
+.dataAnalysis_header li{
+	width: 150px;
+	height: 30px;
+	float: left;
+}
+/**数据分析 表格头 结束*/
+.school {
+	background: url(../img/school.png) no-repeat 0px;
+	color: #2c77c7;
+	cursor: pointer;
+}
+
+.subject {
+	width: 65px !important;
+	background: url(../img/subject.png) no-repeat 0px;
+	color: #d99c1a;
+	cursor: pointer;
+}
+
+
+.teacher {
+	background: url(../img/teacher.png) no-repeat 0px;
+	color: #aa4444;
+	cursor: pointer;
+}
+.header_display {
+	color: #dddada;
+}
+
+.data_display {
+	width: 700px;
+	height: 200px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 95px;
+	overflow-y: auto;
+	color: #f3f7f3;
+}
+
+.data_display::-webkit-scrollbar {
+	width: 8px;
+	border-radius: 5px;
+	background: #ffffff;
+}
+
+
+/*.data_display::-webkit-scrollbar-button:vertical:start {
+	background: url(../img/scrollUp.png) no-repeat;
+	background-size: 15px 15px;
+}
+.data_display::-webkit-scrollbar-button:vertical:end{
+	background: url(../img/scrollDown.png) no-repeat;
+	background-size: 15px 15px;
+}*/
+
+.data_display::-webkit-scrollbar-thumb {
+	width: 8px;
+	background: rgba(24, 221, 156, 1);
+}
+
+.data_display>ul>li {
+	margin-bottom: 10px;
+}
+.data_display>ul>li>div {
+	display: inline-block;
+	width: 150px;
+}
+
+.serial_number {
+	width: 30px !important;
+	height: 30px;
+	border-radius: 30px;
+	background: #356fb3;
+	text-align: center;
+	line-height: 30px;
+	font-size: 18px;
+	margin-right: 120px;
+}
+
+.pass {
+	width: 20px;
+	height: 20px;
+	background: url(../img/pass.png) no-repeat;
+	margin-top: -24px;
+	float: left;
+	margin-left: 365px;
+}
+
+.no_pass {
+	width: 20px;
+	height: 20px;
+	background: url(../img/no_pass.png) no-repeat;
+	margin-top: -24px;
+	float: left;
+	margin-left: 365px;
+}
+
+
+.ascending {
+	width: 23px;
+	height: 23px;
+	background: url(../img/ascending.png) no-repeat;
+	float: left;
+	margin-top: -243px;
+	margin-left: 779.5px;
+	cursor: pointer;
+}
+
+.ascending:hover {
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+
+.descending {
+	width: 23px;
+	height: 23px;
+	background: url(../img/descending.png) no-repeat;
+	float: left;
+	margin-top: -243px;
+	margin-left: 779.5px;
+	cursor: pointer;
+	display: none;
+}
+
+.descending:hover {
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+
+
+/*这是数据分析结束*/
+
+
+/*这是资产管理开始*/
+
+.asset_management {
+	width: 955px;
+	height: 430px;
+	float: left;
+	margin-left: 30px;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 0px 0px 5px 5px;
+}
+
+.managementTitle {
+	width: 500px;
+	height: 40px;
+	margin: 0 auto;
+	background: rgba(146, 57, 248, 0.2);
+	font-size: 28px;
+	color: #02ddd3;
+	text-align: center;
+	line-height: 40px;
+}
+
+.management_left {
+	border-top: 40px solid rgba(146, 57, 248, 0.2);
+	border-right: 30px solid transparent;
+	float: left;
+	margin-left: 728px;
+	margin-top: -40px;
+}
+
+.management_right {
+	border-top: 40px solid rgba(146, 57, 248, 0.2);
+	border-left: 30px solid transparent;
+	float: left;
+	margin-left: 198px;
+	margin-top: -40px;
+}
+
+.management_date {
+	height: 80px;
+	margin: 30px auto;
+}
+
+.management_date>li {
+	width: 230px;
+	height: 80px;
+	margin-left: 28px;
+	float: left;
+	text-align: center;
+	line-height: 40px;
+	color: #30e7f0;
+	font-size: 20px;
+}
+
+.management_date>li>span {
+	font-size: 28px;
+	line-height: 60px;
+	position: relative;
+	z-index: 9;
+	font-family: STXihei
+}
+
+.asset_graph {
+	position: absolute;
+	margin-top: -70px;
+	margin-left: 30px;
+}
+.money{
+	width: 5px;
+	height: 80px;
+	font-size: 16px;
+	color: #03d5cc;
+	position: absolute;
+	margin-top: 53px;
+	margin-left: 38px;
+}
+
+/*这是资产管理结束*/
+
+
+/*这是环境监测开始*/
+
+.environmental {
+	width: 380px;
+	height: 430px;
+	float: left;
+	margin-left: 70px;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 0px 0px 5px 5px;
+}
+
+.region {
+	width: 330px;
+	height: 60px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+.region>li {
+	width: 91px;
+	height: 20px;
+	margin-top: 10px;
+	margin-left: 19px;
+	float: left;
+	cursor: pointer;
+}
+
+.region>li>div {
+	width: 25px;
+	height: 20px;
+	border-radius: 10px;
+}
+
+.region>li>span {
+	font-size: 14px;
+	color: #ffffff;
+	margin: -18px auto;
+	display: block;
+	padding-left: 35px;
+}
+
+.science_monitor {
+	width: 300px;
+	height: 310px;
+	float: left;
+	margin-top:-25px;
+	margin-left: 40px;
+}
+
+.science_monitor>ul {
+	width: 300px;
+	height: 350px;
+	margin: 0 auto 0 auto;
+}
+
+.science_monitor>ul>li {
+	width: 300px;
+	height: 30px;
+	margin-top: 20px;
+	color: #ffffff;
+}
+
+.scienceSmall {
+	text-align: left;
+	line-height: 40px;
+	float: left;
+	color: #ffffff;
+	font-size: 14px;
+}
+
+.science_monitor>ul>li>img {
+	float: left;
+	margin-left: 29px;
+	margin-top: 5px;
+}
+
+.science_monitor>ul>li>.temperature_img,.PM_img,.illumination_img ,.humidity_img,.noise_img{
+	margin-left: 20px;
+	margin-top: 5px;
+	float: left;
+	width: 17px;
+	height: 29px;
+	background: url(../img/temperature.png) no-repeat;
+}
+.science_monitor>ul>li>.humidity_img{
+	background: url(../img/humidity.png) no-repeat;
+	width: 23px;
+}
+.science_monitor>ul>li>.PM_img {
+	background: url(../img/PM.png) no-repeat;
+	margin-top: 9px;
+	margin-left: 15px;
+}
+
+.science_monitor>ul>li>.illumination_img {
+	background: url(../img/illumination.png) no-repeat;
+	width: 26px;
+	margin-left: 18px;
+}
+.science_monitor>ul>li>.noise_img{
+	background: url(../img/noise.png) no-repeat;
+}
+
+.science_monitor>ul>li>div {
+	height: 28px;
+	float: left;
+	border-radius: 20px;
+	color: #ffffff;
+	line-height: 28px;
+	padding-left: 20px;
+	font-size: 14px;
+	margin-left: 14px;
+	margin-top: 6px;
+	padding-right: 15px;
+	position: relative;
+	z-index: 11;
+}
+
+.scienceTitle {
+	color: #ffffff;
+	font-size: 20px;
+	text-align: center;
+	line-height: 20px;
+	border-bottom: 1px solid #c8c8c8;
+}
+
+.temperature {
+	margin-top: -40px;
+	margin-left: 120px;
+	background: #e37363;
+}
+
+.humidity {
+	margin-left: 20px;
+	background: #7abdaf;
+}
+
+.PM {
+	margin-left: 13px !important;
+	background: #8f71b4;
+}
+
+.illumination {
+	margin-top: -40px;
+	margin-left: 120px;
+	background: #cc9241;
+}
+
+.noise {
+	margin-left: 20px !important;
+	background: #ca4b66;
+}
+.fulls{
+	width: 180px;
+	height: 28px;
+	background: rgba(0, 0, 0, 0.3);
+	margin-top: 6px;
+	margin-left: 85px;
+	position: absolute;
+	border-radius: 12px;
+}
+
+/*这是环境监测结束*/
+
+
+/*这是运维管理开始*/
+
+.maintenance {
+	width: 380px;
+	height: 430px;
+	float: left;
+	margin-left: 30px;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 0px 5px 5px 5px;
+	overflow: hidden;
+}
+
+.maintenance_graph {
+	float: left;
+	margin-top: 60px;
+	margin-left: -205px
+}
+
+
+/*这是运维管理结束*/
+
+
+/*这是应用监测开始*/
+
+.monitor {
+	width: 880px;
+	height: 350px;
+	float: left;
+	margin-top: -350px;
+	margin-left: 965px;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 0px 5px 5px 5px;
+}
+
+.monitor_graph {
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+
+/*这是应用监测结束*/

@@ -1,0 +1,43 @@
+/*这是分页按钮样式*/
+
+.ui-pagination-container {
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+    height: 34px;
+    line-height: 34px;
+}
+
+.ui-pagination-container .ui-pagination-page-item {
+    font-size: 14px;
+    padding: 4px 10px;
+    background: #2f4b5e;
+    border: 1px solid #57c5b8;
+    color: #57c5b8;
+    margin: 0 3px;
+    text-decoration: none;
+}
+
+.ui-pagination-container .ui-pagination-page-item:hover {
+    border-color: #568dbd;
+    color: #568dbd;
+    text-decoration: none;
+}
+
+.ui-pagination-container .ui-pagination-page-item.active {
+    background: #568dbd;
+    border-color: #568dbd;
+    color: #fff;
+    cursor: default;
+}
+
+.page {
+    width: 100%;
+    z-index: 9999;
+}
+
+.info {
+    width: 200px;
+    height: 34px;
+    line-height: 34px;
+}

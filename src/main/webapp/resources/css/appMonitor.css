@@ -1,0 +1,739 @@
+/*这是背景开始*/
+
+.main_warp {
+    width: 1903px;
+    height: 858px;
+    background: url(../img/warp.jpg) no-repeat;
+    position: relative;
+    margin-top: -1px;
+}
+
+.app_warp {
+    width: 1750px;
+    height: 790px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    margin: 0 auto;
+}
+.warp{
+    height: 800px !important;
+}
+/*这是背景结束*/
+/*这是页面定位开始*/
+
+.location{
+    width: 300px;
+    height: 30px;
+    margin-left: 78px;
+    line-height: 30px;
+    background: url(../img/location.png) no-repeat;
+    color: #4ea9c7;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+}
+/*这是页面定位结束*/
+/*这是搜索框开始*/
+
+.choice ,.choice_operations{
+    width: 1650px;
+    height: 40px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+.select_backgroud {
+    width: 174px;
+    height: 26px;
+    border: solid 5px #3b9e7c;
+    border-radius: 5px;
+    float: left;
+    margin-left: 10px;
+    background: #3b9e7c;
+}
+
+.select_backgroud02 {
+    width: 170px;
+    height: 23px;
+    background: #ffffff;
+    border: solid 2px #3b9e7c;
+    border-radius: 5px;
+}
+
+select {
+    width: 173px;
+    height: 26px;
+    outline: none;
+    appearance: none;
+    padding: 2px;
+    padding-left: 55px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border-radius: 5px;
+    border: 2px solid #3b9e7c;
+    background: url(../img/select_down.png) no-repeat 150px;
+    background-size: 10px 10px;
+    margin-top: -2px;
+    margin-left: -2px;
+}
+
+.input_down {
+    width: 152px;
+    height: 18px;
+    outline: none;
+    padding: 2px;
+    padding-left: 17px;
+    border-radius: 5px;
+    border: 2px solid #3b9e7c;
+    margin-top: -2px;
+    margin-left: -2px;
+}
+.search {
+    padding:    0px 20px;
+    height: 36px;
+    border-radius: 5px;
+    background: #3b9e7c;
+    float: left;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 42px;
+    cursor: pointer;
+}
+.search:hover{
+    background: #4ccca0;
+}
+
+.button {
+    padding:    0px 20px;
+    height: 36px;
+    border-radius: 5px;
+    background: #3b9e7c;
+    float: left;
+    margin-left: 10px;
+    text-align: center;
+    line-height: 36px;
+    cursor: pointer;
+    color: white;
+}
+.the_add {
+    padding:    0px 20px;
+    height: 26px;
+    border-radius: 5px;
+    background: #3b9e7c;
+    float: left;
+    margin-left: 1190px;
+    text-align: center;
+    line-height: 26px;
+    cursor: pointer;
+    color: white;
+}
+.the_add:hover{
+    background: #4ccca0;
+}
+.button_edit,.button_edit02,.button_edit03{
+    width: 25px;
+    height: 25px;
+    background: url("../img/modify _btn.png") no-repeat;
+    cursor: pointer;
+    margin-top: -2px;
+    margin-left: 10px;
+    position: absolute;
+}
+.button_edit02{
+    margin-top: -11px !important;
+    margin-left: 24px !important;
+}
+.button_edit03{
+    margin-top: -11px !important;
+    margin-left: 35px !important;
+}
+.button_edit:hover{
+    background: url("../img/modify _btn02.png") no-repeat;
+}
+.button_edit02:hover{
+    background: url("../img/modify _btn02.png") no-repeat;
+}
+.button_edit03:hover{
+    background: url("../img/modify _btn02.png") no-repeat;
+}
+.button_delete,.button_delete02{
+    width: 25px;
+    height: 25px;
+    background: url("../img/delete.png") no-repeat;
+    cursor: pointer;
+    position: absolute;
+    margin-top: -13px;
+    margin-left: 57px;
+}
+.button_delete02{
+    margin-left: 67px !important;
+}
+.button_delete,.button_delete02:hover{
+    background: url("../img/delete02.png") no-repeat;
+}
+.button_bangding{
+    width: 25px;
+    height: 25px;
+    background: url("../img/bangding02.png") no-repeat;
+    cursor: pointer;
+    margin: 0 auto;
+}
+.button_bangding:hover{
+    background: url("../img/bangding.png") no-repeat;
+}
+.button:hover {
+    background: #4ccca0;
+}
+.choice_operations>ul>li{
+    line-height: 26px;
+    color: #02ddd3;
+    width: 105px;
+    height: 26px;
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+    text-align: center;
+
+}
+.choice_operations>ul>li:hover{
+    background-color: #44c99b;
+    border-radius: 11px;
+    color: #f8fbfd;
+}
+.choice_checked{
+    background-color: #44c99b;
+    border-radius: 11px;
+    color: #f8fbfd !important;
+}
+.this_end{
+    width: 65px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.this_end>p{
+    width: 27px;
+    height: 27px;
+    background: url(../img/zhe_end.png) no-repeat;
+}
+.this_end>span{
+    display: block;
+    float: right;
+    margin-top: -24px;
+}
+.this_end:hover p{
+    background: url(../img/the_end.png) no-repeat;
+}
+.this_end:hover span{
+    color: #62fff7;
+}
+.unfinished{
+    width: 80px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.unfinished>p{
+    width: 27px;
+    height: 27px;
+    background: url(../img/unfinished.png) no-repeat;
+}
+.unfinished>span{
+    display: block;
+    float: right;
+    margin-top: -24px;
+}
+.unfinished:hover p{
+    background: url(../img/unfinished02.png) no-repeat;
+}
+.unfinished:hover span{
+    color: #62fff7;
+}
+/*这是搜索框结束*/
+
+/*这是监测数据头部开始*/
+
+.app_header {
+    width: 1610px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.3);
+    float: left;
+    margin-top: 10px;
+    margin-left: 70px;
+}
+
+.line {
+    width: 1610px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    float: left;
+}
+
+.app_header > li {
+    width: 200px;
+    height: 50px;
+    float: left;
+    margin-left: 25px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    color: #52cda3;
+}
+
+.app_county {
+    width: 110px !important;
+}
+
+.control {
+    width: 260px !important;
+}
+
+/*这是监测数据头部结束*/
+/**单个学校的数据样式 开始*/
+.app_header_realTime {
+    width: 1610px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.3);
+    float: left;
+    margin-top: 10px;
+    margin-left: 70px;
+}
+
+.app_header_realTime > li {
+    margin-right: 35px;
+    height: 50px;
+    float: left;
+    margin-left: 25px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    color: #52cda3;
+}
+
+.realTime_data {
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    height: 680px;
+}
+.realTime_data::-webkit-scrollbar {
+    display: none;
+}
+.realTime_table {
+    margin: 0 auto;
+    width: 1616px;
+    text-align: center;
+    border-collapse: collapse;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.realTime_table > thead > tr {
+    height: 50px;
+    border-bottom: 5px solid rgba(255, 255, 255, 0.1);
+    color: #52cda3;
+
+    font-size: 18px;
+
+}
+
+.realTime_table > thead > tr > th {
+    font-weight: normal !important;
+}
+
+.realTime_table > tbody > tr {
+    height: 50px;
+    color: #61c5c0;
+}
+
+/**单个学校的数据样式 结束*/
+
+/*这是监测具体数据开始*/
+
+.app_main {
+    width: 1610px;
+    height: 300px;
+    background: rgba(0, 0, 0, 0.2);
+    float: left;
+    margin-left: 70px;
+    overflow-y: hidden;
+}
+
+.app_main::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 5px;
+    background: #ffffff;
+}
+
+.app_main::-webkit-scrollbar-thumb {
+    width: 8px;
+    background: rgba(24, 221, 156, 1);
+}
+
+.app_main > ul {
+    width: 1600px;
+    height: 30px;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.app_main > ul > li {
+    width: 200px;
+    height: 30px;
+    float: left;
+    margin-left: 25px;
+    line-height: 30px;
+    color: #61c5c0;
+    text-align: center;
+}
+
+.app_main > ul > li > p {
+    float: left;
+    margin-left: 123px;
+    font-size: 28px;
+    margin-top: -30px;
+}
+
+.app_main > ul > li > div {
+    width: 130px;
+    height: 30px;
+    text-align: center;
+    float: left;
+}
+
+.see {
+    margin-left: 20px;
+    background: url(../img/see.png) no-repeat 5px;
+    cursor: pointer;
+}
+.see_s{
+    background: url(../img/see.png) no-repeat 115px;
+}
+.see:hover {
+    background: url(../img/see02.png) no-repeat 5px;
+    color: #52cda3;
+}
+.see_s:hover {
+    background: url(../img/see02.png) no-repeat 115px;
+    color: #52cda3;
+}
+
+.monitor {
+    background: url(../img/monitor.png) no-repeat 4px 4px;
+    margin-left: 140px;
+    margin-top: -29px;
+    cursor: pointer;
+}
+
+.monitor:hover {
+    background: url(../img/monitor02.png) no-repeat 4px 4px;
+    color: #52cda3;
+}
+
+/*这是监测具体数据结束*/
+
+/*这是图表数据展示开始*/
+
+.app_chart {
+    margin-top:-300px;
+    margin-left: 65px;
+    float: left;
+}
+.Monitor_chart{
+    margin-top:10px;
+    margin-left: 65px;
+    float: left;
+}
+/*这是图表数据展示结束*/
+
+/**开关样式 开始*/
+.on {
+    color: #52cda3;
+}
+
+.off {
+    color: #c4151c;
+}
+
+.control_on {
+    width: 49px;
+    height: 23px;
+    margin: auto auto;
+    background-image: url("../img/control_on.png");
+    cursor: pointer;
+}
+
+.control_on:hover {
+    margin-top: 2px;
+}
+
+.control_off {
+    width: 49px;
+    height: 23px;
+    margin: auto auto;
+    background-image: url("../img/control_off.png");
+    cursor: pointer;
+}
+
+.control_off:hover {
+    margin-top: 2px;
+}
+
+/**开关样式 结束*/
+
+/**环境监测 开始*/
+.environments {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background-position: 25% 0px;
+}
+
+.temperature {
+    background: url("../img/temperature.png") no-repeat;
+
+}
+
+.humidity {
+    background: url("../img/humidity.png") no-repeat;
+}
+
+.PM {
+    background: url("../img/PM.png") no-repeat;
+}
+
+.illumination {
+    background: url("../img/illumination.png") no-repeat;
+}
+
+.noise {
+    background: url("../img/noise.png") no-repeat;
+}
+
+/**环境监测 结束*/
+/**定位当前位置 开始*/
+.current_position {
+
+    width: 398px;
+    height: 40px;
+    background: rgba(146, 57, 248, 0.4);
+    font-size: 23px;
+    color: #02ddd3;
+    text-align: center;
+    line-height: 40px;
+}
+.current_position>div{
+    border-top: 40px solid rgba(146, 57, 248, 0.4);
+    border-right: 30px solid transparent;
+    float: left;
+    margin-left: 398px;
+    margin-top: -40px;
+}
+
+/**定位当前位置 结束*/
+
+/**学校管理 开始*/
+.school_data{
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    height: 625px;
+}
+.single_school{
+    color: white;
+    margin-left: 70px;
+    margin-right: 70px;
+    height: 200px;
+    background: rgba(0,0,0,0.2);
+    text-align: left;
+    text-indent: 100px;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.1);
+}
+.single_school:hover{
+    background: rgba(0,0,0,0.4);
+}
+.school_detail{
+    height: 180px;
+    float: left;
+    width: 30%;
+}
+.school_other_info{
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #61c5c0;
+}
+.school_title{
+    font-size: 25px;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+}
+.introduction{
+    height: 180px;
+    float: left;
+    width: 60%;
+}
+.introduction>div{
+    margin: 72px auto;
+    width: 80%;
+    text-indent: 0px;
+}
+.operate{
+    height: 180px;
+    width:10%;
+    float: right;
+}
+.operate>div{
+    float: right;
+    margin-right: 20px;
+    margin-top: 17px;
+}
+/**学校管理 结束*/
+
+/*这是运维流程图开始*/
+.process_warp{
+    width: 1500px;
+    height: 150px;
+    margin:70px auto;
+}
+.process_warp>li{
+    width: 375px;
+    height: 150px;
+    float: left;
+    text-align: center;
+}
+.process_warp>li>div{
+    width: 150px;
+    height:100px;
+    border:3px solid #0f212f;
+    margin:0 auto;
+}
+.process01>div{
+    background: #702143;
+}
+.process02>div{
+    background: #3a4e69;
+}
+.process03>div{
+    background: #3a87b7;
+}
+.process04>div{
+    background: #43938c;
+}
+.process_warp>li>div>span{
+    color:#ffffff;
+
+    display: block;
+}
+.process_warp>li>p{
+    width: 374px;
+    height: 5px;
+    background: #50cba1;
+    border-radius: 5px;
+    margin:10px auto;
+}
+.process_warp>li>span{
+    color: #50cba1;
+}
+/*这是运维流程图结束*/
+
+/*这是审批意见开始*/
+
+.opinion_title{
+    width: 200px;
+    height: 40px;
+    margin-left:70px;
+    color:#02ddd3;
+    font-size: 22px;
+}
+.opinion_choice{
+    width: 250px;
+    height: 30px;
+    margin-left:70px;
+    border:3px solid #3e4e5c;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.3);
+}
+.opinion_choice>span{
+    color: #6ac2dd;
+    line-height: 30px;
+    padding-left:10px;
+}
+.opinion_select{
+    width: 175px;
+    height: 30px;
+    margin-top: -30px;
+    margin-left: 75px;
+    float: left;
+    border: none;
+    color:#4bcda0;
+    font-size: 15px;
+}
+.opinion_warp{
+    width: 1600px;
+    height: 150px;
+    margin-top:15px;
+    margin-left:70px;
+    border:3px solid #3e4e5c;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.3);
+}
+.opinion_warp>span{
+     color: #6ac2dd;
+     line-height: 30px;
+     padding-left:10px;
+ }
+.opinion_textarea{
+    width: 1600px;
+    height: 150px;
+    line-height: 30px;
+    float: left;
+    background: rgba(255, 255, 255, 0);
+    resize: none;
+    margin-top: -30px;
+    border: none;
+    outline: none;
+    text-indent:90px;
+    padding-left:10px;
+    color: #4bcda0;;
+}
+.opinion_keep{
+    width: 120px;
+    height: 35px;
+    margin-top:10px;
+    margin-left:1500px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    color: #2e9773;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+}
+.opinion_keep:hover{
+    color: #3acd9a;
+}
+.opinion_keep:hover .keep_img{
+    background: url(../img/keep_img.png) no-repeat;
+}
+.opinion_keep>span{
+    margin-left:-16px;
+}
+.keep_img{
+    width: 21px;
+    height: 21px;
+    float: left;
+    margin-top:7px;
+    margin-left:10px;
+    background: url(../img/keep_img02.png) no-repeat;
+}
+/*这是审批意见结束*/
+
+
+.realTime_data::-webkit-scrollbar {
+    display: none;
+}
+

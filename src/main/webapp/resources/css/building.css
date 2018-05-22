@@ -1,0 +1,168 @@
+/*这是背景开始*/
+
+.main_warp {
+	width: 1903px;
+	height: 858px;
+	background: url(../img/warp.jpg) no-repeat;
+	position: relative;
+	margin-top: -1px;
+}
+
+.app_warp {
+	width: 1750px;
+	height: 790px;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 5px;
+	margin: 0 auto;
+}
+
+/*这是背景结束*/
+/*这是页面定位开始*/
+
+.location{
+	width: 300px;
+	height: 30px;
+	margin-left: 78px;
+	line-height: 30px;
+	background: url(../img/location.png) no-repeat;
+	color: #4ea9c7;
+	font-size: 17px;
+	font-weight: 600;
+	text-align: center;
+	margin-bottom: 10px;
+}
+/*这是页面定位结束*/
+
+/*这是搜索框开始*/
+
+.choice {
+	width: 1000px;
+	height: 40px;
+	float: left;
+	margin-top: 20px;
+	margin-left: 60px;
+}
+
+.select_backgroud {
+	width: 174px;
+	height: 26px;
+	border: solid 5px #3b9e7c;
+	border-radius: 5px;
+	float: left;
+	margin-left: 172px;
+	background: #3b9e7c;
+}
+
+.select_backgroud02 {
+	width: 170px;
+	height: 23px;
+	background: #ffffff;
+	border: solid 2px #3b9e7c;
+	border-radius: 5px;
+}
+
+select {
+	width: 173px;
+	height: 26px;
+	outline: none;
+	appearance: none;
+	padding: 2px;
+	padding-left: 55px;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	border-radius: 5px;
+	border: 2px solid #3b9e7c;
+	background: url(../img/select_down.png) no-repeat 150px;
+	background-size: 10px 10px;
+	margin-top: -2px;
+	margin-left: -2px;
+}
+
+.input_down {
+	width: 152px;
+	height: 18px;
+	outline: none;
+	padding: 2px;
+	padding-left: 17px;
+	border-radius: 5px;
+	border: 2px solid #3b9e7c;
+	margin-top: -2px;
+	margin-left: -2px;
+}
+.search {
+	padding:    0px 20px;
+	height: 36px;
+	border-radius: 5px;
+	background: #3b9e7c;
+	float: left;
+	margin-left: 10px;
+	text-align: center;
+	line-height: 42px;
+	cursor: pointer;
+}
+.search:hover{
+	background: #4ccca0;
+}
+/*这是搜索框结束*/
+
+/*这是具体教学楼管理开始*/
+.building{
+	width: 1500px;
+	height: 650px;
+	margin:70px auto;
+}
+.building>li{
+	width: 300px;
+	height: 210px;
+	float: left;
+	margin-top: 32px;
+	margin-left: 30px;
+	border:10px solid #eeeeee ;
+	background: rgba(58,135,183,1);
+	color: #ffffff;
+	text-align: center;
+	line-height: 30px;
+	font-size: 20px;
+	cursor: pointer;
+}
+.building>li:hover{
+	-moz-box-shadow:5px 5px 5px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow:5px 5px 5px rgba(0, 0, 0, 0.3);
+	box-shadow:5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.building>li>span{
+	cursor: pointer;
+}
+.building>li>span:hover{
+	color: #7a5297;
+}
+.operation_warp:hover{
+	color: #ffffff !important;
+}
+.school_name{
+	line-height: 45px;
+	font-size: 25px;
+}
+.county_name{
+	line-height: 10px;
+}
+.modify_building:hover{
+	color: #7a5297;
+}
+.delete_building:hover{
+	color: #7a5297;
+}
+.add_warp{
+	background: #c6d5ea !important;
+}
+.add_building{
+	width: 66px;
+	height: 66px;
+	margin:70px auto;
+	background: url(../img/add_building.png) no-repeat;
+}
+.building_add{
+	margin-top: -65px;
+	color: #3daf87;
+}
+/*这是具体教学楼管理结束*/

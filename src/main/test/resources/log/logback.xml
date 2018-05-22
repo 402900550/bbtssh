@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration scan="true" debug="false" scanPeriod="60"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="./logback.xsd">
+
+	<property name="logfile.path" value="/bbtLogs/bbt" />
+	<property name="logfile.bak.path" value="/bbtLogs/bbtBack" />
+
+	<!-- 控制台输出日志 -->
+	<appender name="stdoutAppender" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %level %class[%line]:%msg%n</pattern>
+		</encoder>
+		<!-- 此日志appender是为开发使用，只配置最底级别，控制台输出的日志级别是大于或等于此级别的日志信息 -->
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>INFO</level>
+		</filter>
+	</appender>
+	
+	
+	<!-- 正常日志文件输出日志 -->
+	<appender name="fileAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${logfile.path}/bbt.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${logfile.bak.path}/bbt.log.%d.bak</fileNamePattern>
+			<maxHistory>7</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %level %class [%line]:%msg%n</pattern>
+		</encoder>
+	</appender>
+	
+	<!-- 错误文件输出日志 -->
+	<appender name="errorFileAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${logfile.path}/jobskillError.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${logfile.bak.path}/bbtError.log.%d.bak</fileNamePattern>
+			<maxHistory>30</maxHistory>
+		</rollingPolicy>
+		<encoder>
+			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %level %class [%line]:%msg%n</pattern>
+		</encoder>
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>ERROR</level>
+		</filter>
+	</appender>
+
+	<logger name="com.hfkj.bbt" additivity="false" level="INFO">
+		<appender-ref ref="fileAppender" />
+		<appender-ref ref="errorFileAppender" />
+		<appender-ref ref="stdoutAppender" />
+		<!--<appender-ref ref="EMAIL"/>-->
+	</logger>
+
+	<root level="INFO">
+		<!-- 上线 需要注释该stdoutAppender -->
+		<appender-ref ref="stdoutAppender" />
+		<appender-ref ref="fileAppender" />
+		<appender-ref ref="errorFileAppender" />
+		<!--<appender-ref ref="EMAIL"/>-->
+	</root>
+
+</configuration>  

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+    <context:property-placeholder location="classpath:db/jdbc.properties" />
+
+    <!--dataSource-->
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="${jdbc.driverClassName}" />
+        <property name="url" value="${jdbc.url}" />
+        <property name="username" value="${jdbc.username}" />
+        <property name="password" value="${jdbc.password}" />
+        <!-- 配置连接池的初始值 -->
+        <property name="initialSize" value="5" />
+        <!-- 当最小空闲时，当连接少于minIdle时会自动去申请一些连接 -->
+        <property name="minIdle" value="5" />
+        <!-- 连接池的最大值 -->
+        <property name="maxActive" value="50" />
+        <!-- 连接池中连接，在时间段内一直空闲，被逐出连接池的时间 ,2分钟？-->
+        <property name="minEvictableIdleTimeMillis" value="120000"></property>
+        <!-- 最大空闲时，当经过一个高峰之后，连接池可以将一些用不到的连接释放，一直减少到maxIdle为止 -->
+        <property name="maxIdle" value="20" />
+        <!-- 最大等待时间 -->
+        <property name="maxWait" value="60000" />
+
+        <!-- 超过100分钟后，进行没用连接（废弃）的回收 -->
+        <property name="removeAbandoned" value="true" />
+        <property name="removeAbandonedTimeout" value="6000000" />
+
+
+        <!-- 解决MySql 8小时问题，需要在获取连接的时候去验证一次连接是否有效 -->
+        <!-- 验证连接是否有效的SQL语句 -->
+        <property name="validationQuery" value="SELECT 1"></property>
+        <!-- 应用获取连接时需要对连接进行验证是否有效 -->
+        <property name="testOnBorrow" value="true"></property>
+        <!-- 每隔1小时会去验证连接池里的连接是否有效 -->
+        <property name="testWhileIdle" value="true"></property>
+        <property name="timeBetweenEvictionRunsMillis" value="3600000"></property>
+        <!-- 每次检查的连接数，设置为最大活动数，检查所有连接 -->
+        <property name="numTestsPerEvictionRun" value="50"></property>
+    </bean>
+
+    <!--创建Spring的SessionFactory工厂 -->
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+        <!-- 注入数据源 -->
+        <property name="dataSource" ref="dataSource" />
+        <!-- 设置Spring去哪个包中查找相应的实体类 -->
+        <property name="packagesToScan">
+            <list>
+                <value>com.hfkj.bbt</value>
+            </list>
+        </property>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+                <prop key="hibernate.hbm2ddl.auto">update</prop>
+                <prop key="hibernate.connection.autocommit">true</prop>
+                <prop key="hibernate.current_session_context_class">org.springframework.orm.hibernate4.SpringSessionContext</prop>
+                <prop key="hibernate.show_sql">true</prop>
+                <prop key="hibernate.format_sql">false</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!-- 配置Spring的事务处理 -->
+    <!-- 创建事务管理器 -->
+    <bean id="txManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+
+    <tx:annotation-driven transaction-manager="txManager" />
+</beans>

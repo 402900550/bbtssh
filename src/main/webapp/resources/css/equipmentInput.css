@@ -1,0 +1,146 @@
+/*这是背景开始*/
+
+.main_warp {
+    width: 1903px;
+    height: 858px;
+    background: url(../img/warp.jpg) no-repeat;
+    position: relative;
+    margin-top: -1px;
+}
+
+/*这是背景结束*/
+
+/*这是页面定位开始*/
+
+.location {
+    width: 300px;
+    height: 30px;
+    margin-left: 150px;
+    line-height: 30px;
+    background: url(../img/location.png) no-repeat;
+    color: #66bad5;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/*这是页面定位结束*/
+
+/**设备录入 开始*/
+.top_title {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 1600px;
+    height: 50px;
+    border-bottom: 3px solid #627886;
+    background: rgba(0, 0, 0, 0.2);
+
+}
+.checkbox{
+    border: 1px solid #627886;
+    background: rgba(0, 0, 0,0);
+    margin: 0px 5px;
+}
+.select,.input{
+    width:145px;
+    height: 25px;
+    margin-left: 3px;
+    border: 0px;
+    background: rgba(0, 0, 0,0);
+    color: #4bcda0;
+    outline: none;
+    font-size: 18px;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+}
+.content {
+    margin: 0 auto;
+    width: 1600px;
+    background: rgba(0, 0, 0, 0.1);
+    color: #66bad5;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.choices_condition {
+    width: 1400px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.table{
+    border-collapse: collapse;
+    width: 100%;
+    height: 60px;
+    border:2px solid #627886;
+}
+.equipments{
+    height: 30px;
+    margin-top: 10px;
+}
+.table>tbody>tr>td{
+    border: 2px solid #627886;
+    width: 280px;
+    height: 30px;
+    padding-left: 10px;
+}
+.text_span{
+    display: inline-block;
+    text-align: left;
+}
+.input_data {
+    width: 1400px;
+    margin: 20px auto;
+}
+
+.save_area {
+    width: 1400px;
+    height: 50px;
+    margin: 20px auto;
+}
+.save_button{
+    width: 140px;
+    height: 20px;
+    margin: auto auto;
+    cursor: pointer;
+    color: #4bcda0;
+    background: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 18px;
+}
+.save_button:hover{
+    color: #1bb0b4;
+    border: 1px solid #4158ff;
+}
+.opinion_keep{
+    width: 120px;
+    height: 35px;
+    margin:20px auto;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    color: #2e9773;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+}
+.opinion_keep:hover{
+    color: #3acd9a;
+}
+.opinion_keep:hover .keep_img{
+    background: url(../img/keep_img.png) no-repeat;
+}
+.opinion_keep>span{
+    margin-left:-16px;
+    font-size: 16px;
+}
+.keep_img{
+    width: 21px;
+    height: 21px;
+    float: left;
+    margin-top:7px;
+    margin-left:10px;
+    background: url(../img/keep_img02.png) no-repeat;
+}
+/**设备录入 结束*/
+
+

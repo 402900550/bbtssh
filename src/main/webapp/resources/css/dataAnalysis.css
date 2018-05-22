@@ -1,0 +1,512 @@
+/*这是背景开始*/
+
+.main_warp {
+	width: 1903px;
+	height: 858px;
+	background: url(../img/warp.jpg) no-repeat;
+	position: relative;
+	margin-top: -1px;
+}
+
+
+/*这是背景结束*/
+
+
+/*这是搜索框开始*/
+
+.choice {
+	width: 500px;
+	height: 40px;
+	float: left;
+	margin-top: 20px;
+	margin-left: 60px;
+}
+
+.select_backgroud{
+	width: 174px;
+    height: 26px;
+    border: solid 5px #3b9e7c;
+    border-radius: 5px;
+    float: left;
+    margin-left:10px;
+    background: #3b9e7c;
+}
+.select_backgroud02{
+	width: 170px;
+    height: 23px;
+    background: #ffffff;
+    border: solid 2px #3b9e7c;
+    border-radius: 5px;
+}
+select{
+	width: 173px;
+    height: 26px;
+	outline: none;
+    appearance: none;
+    padding:2px;
+    padding-left:55px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border-radius: 5px;
+    border: 2px solid #3b9e7c;
+	background: url(../img/select_down.png) no-repeat 150px;
+	background-size: 10px 10px;
+	margin-top:-2px;
+	margin-left:-2px;
+}
+.input_down {
+	width: 152px;
+    height: 18px;
+	outline: none;
+	padding:2px;
+    padding-left:17px;
+    border-radius: 5px;
+    border: 2px solid #3b9e7c;
+    margin-top:-2px;
+	margin-left:-2px;
+}
+
+.search{
+	width: 40px;
+	height: 36px;
+	border-radius: 5px;
+	background: #3b9e7c;
+	float:left;
+	margin-left:10px;
+	text-align: center;
+	line-height: 42px;
+	cursor: pointer;
+}
+.search:hover{
+	background: #4ccca0;
+}
+
+/*这是搜索框结束*/
+
+/*这是数据分析开始*/
+
+.data_statistics{
+	width: 428px;
+	height: 700px;
+	border-radius: 0px 0px 5px 5px;
+	background: rgba(255, 255, 255, 0.1);
+	float: left;
+	margin-top: 70px;
+    margin-left: -490px;
+}
+.statisticsTitle{
+	width: 398px;
+	height: 40px;
+	background: rgba(146, 57, 248, 0.4);
+	font-size: 23px;
+	color: #02ddd3;
+	text-align: center;
+	line-height: 40px;
+}
+.statistics_triangle {
+	border-top: 40px solid rgba(146, 57, 248, 0.4);
+	border-right: 30px solid transparent;
+	float: left;
+	margin-left: 398px;
+	margin-top: -40px;
+}
+.statistics_warp{
+	width: 350px;
+	height: 640px;
+	background: rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+	margin-top:5px;
+	margin-left:40px;
+}
+.statistics_choice{
+	width: 350px;
+	height: 30px;
+	font-size: 18px;
+	line-height: 30px;
+	padding-top:20px;
+}
+.statistics_choice>li{
+	width: 63px;
+	height: 30px;
+	margin-left: 20px;
+	float: left;
+	text-align: right;
+	line-height: 33px;
+}
+.school {
+	background: url(../img/school.png) no-repeat 0px;
+	color: #2c77c7;
+	cursor: pointer;
+}
+
+.school_display {
+	color: #dddada;
+	background: url(../img/school_display.png) no-repeat 0px;
+}
+
+.subject {
+	width: 65px !important;
+	background: url(../img/subject.png) no-repeat 0px;
+	color: #d99c1a;
+	cursor: pointer;
+}
+
+.subject_display {
+	width: 65px !important;
+	color: #dddada;
+	background: url(../img/subject_display.png) no-repeat 0px;
+}
+
+.teacher {
+	background: url(../img/teacher.png) no-repeat 0px;
+	color: #aa4444;
+	cursor: pointer;
+}
+.teacher_display {
+	color: #dddada;
+	background: url(../img/teacher_display.png) no-repeat 0px;
+}
+.grade {
+	background: url(../img/grade.png) no-repeat 0px;
+	color: #209e88;
+	cursor: pointer;
+}
+.grade_display {
+	color: #dddada;
+	background: url(../img/grade_display.png) no-repeat 0px;
+}
+.line{
+	width: 320px;
+	height: 4px;
+	border-radius: 5px;
+	margin-left:15px;
+	background: rgba(255, 255, 255, 0.1);
+}
+.statistics{
+	width: 370px;
+	height: 500px;
+	font-size: 18px;
+	line-height: 30px;
+	margin-top:10px;
+	color: #ffffff;
+}
+.school_header{
+	width: 370px;
+	height: 30px;
+}
+.school_header>li,.subject_header>li,.teacher_header>li,.grade_header>li{
+	width: 75px;
+	height: 30px;
+	text-align: center;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.subject_header{
+	width: 370px;
+	height: 30px;
+	display: none;
+}
+
+.teacher_header{
+	width: 370px;
+	height: 30px;
+	display: none;
+}
+
+.grade_header{
+	width: 370px;
+	height: 30px;
+	display: none;
+}
+
+.school_show {
+	width: 370px !important;
+	height: 540px !important;
+	overflow-y: auto;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+.school_show::-webkit-scrollbar {
+	width: 8px;
+	border-radius: 5px;
+	background: #ffffff;
+}
+.school_show::-webkit-scrollbar-thumb {
+	width: 8px;
+	background: rgba(24, 221, 156, 1);
+}
+
+
+
+.subject_show {
+	width: 370px !important;
+	height: 540px !important;
+	overflow-y: auto;
+	margin-top: 10px;
+	margin-left: 20px;
+	display: none;
+}
+
+.subject_show::-webkit-scrollbar {
+	width: 8px;
+	border-radius: 5px;
+	background: #ffffff;
+}
+.subject_show::-webkit-scrollbar-thumb {
+	width: 8px;
+	background: rgba(24, 221, 156, 1);
+}
+
+
+.teacher_show {
+	width: 370px !important;
+	height: 540px !important;
+	overflow-y: auto;
+	margin-top: 10px;
+	margin-left: 20px;
+	display: none;
+}
+
+.teacher_show::-webkit-scrollbar {
+	width: 8px;
+	border-radius: 5px;
+	background: #ffffff;
+}
+.teacher_show::-webkit-scrollbar-thumb {
+	width: 8px;
+	background: rgba(24, 221, 156, 1);
+}
+
+
+.grade_show {
+	width: 370px !important;
+	height: 540px !important;
+	overflow-y: auto;
+	margin-top: 10px;
+	margin-left: 20px;
+	display: none;
+}
+
+.grade_show::-webkit-scrollbar {
+	width: 8px;
+	border-radius: 5px;
+	background: #ffffff;
+}
+.grade_show::-webkit-scrollbar-thumb {
+	width: 8px;
+	background: rgba(24, 221, 156, 1);
+}
+
+
+.school_show>li>div,.subject_show>li>div,.teacher_show>li>div,.grade_show>li>div{
+	display: inline-block;
+	width: 52px;
+	height: 25px;
+	overflow: hidden;
+	margin-right: 30px;
+}
+
+
+
+.serial_number {
+	width: 25px !important;
+	height: 25px;
+	border-radius: 25px;
+	background: #356fb3;
+	text-align: center;
+	line-height: 25px;
+	font-size: 16px;
+	margin-left: 5px;
+}
+
+
+.no_pass {
+	width: 20px;
+	height: 20px;
+	background: url(../img/no_pass.png) no-repeat;
+	margin-top: -24px;
+	float: right;
+    margin-right: 80px;
+}
+
+
+.ascending {
+	width: 23px;
+	height: 23px;
+	background: url(../img/ascending.png) no-repeat;
+	float: left;
+	margin-top: -300px;
+	margin-left: 779.5px;
+	cursor: pointer;
+}
+
+.ascending:hover {
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+
+.descending {
+	width: 23px;
+	height: 23px;
+	background: url(../img/descending.png) no-repeat;
+	float: left;
+	margin-top: -300px;
+	margin-left: 779.5px;
+	cursor: pointer;
+	display: none;
+}
+
+.descending:hover {
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+}
+/*这是数据分析结束*/
+
+/*这是数据概况开始*/
+.data_survey{
+	width: 1280px;
+    height: 700px;
+    background: rgba(255, 255, 255, 0.1);
+    margin-top: 70px;
+    float: left;
+    border-radius: 0px 5px 5px 5px ;
+}
+.myChart_warp{
+	width: 1258px;
+	height: 645px;
+	background: rgba(0, 0, 0, 0.3);
+	float: left;
+	margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+.myChart_five{
+	margin-left: 450px;
+    margin-top: -218px;
+}
+.myChart_six{
+	margin-left: 920px;
+    margin-top: -218px;
+}
+.myChart_nine{
+	margin-left: 450px;
+    margin-top: -218px;
+}
+.myChart_ten{
+	margin-left: 920px;
+    margin-top: -218px;
+}
+.twelve{
+	display: none;
+}
+.thirteen{
+	display: none;
+}
+.money{
+	width: 5px;
+	height: 80px;
+	font-size: 16px;
+	color: #03d5cc;
+	position: absolute;
+	margin-top: 180px;
+	margin-left: 7px;
+}
+.control_chart{
+	width: 300px;
+	height: 25px;
+	float: left;
+	margin-top:-400px;
+	margin-left: 900px;
+	z-index: 99;
+	position: relative;
+}
+.control_chart>li{
+	width: 80px;
+	height: 20px;
+	float: left;
+	margin-left: 20px;
+	cursor: pointer;
+	text-align: right;
+	font-size: 18px;
+	color: #02ddd3;
+	line-height: 20px;
+}
+.control_chart>li>div{
+	width: 35px;
+	height: 20px;
+	border-radius: 10px;
+	float: left;
+}
+.year>div{
+	background: #4ca3b9;
+}
+.year:hover div{
+	background: #32d1f9;
+}
+.month>div{
+	background: #41af89;
+}
+.month:hover div{
+	background: #37ecae;
+}
+.day>div{
+	background: #53338c;
+}
+.day:hover div{
+	background: #753bdc;
+}
+.circular{
+	width: 65px;
+    height: 65px;
+    background: #3c2c58;
+    border-radius: 65px;
+    float: left;
+    text-align: center;
+    line-height: 65px;
+    color: #02ddd3;
+    margin-top: 92px;
+    margin-left: 140px;
+}
+.class_use{
+	margin-left: 147px;
+}
+/*这是数据概况结束*/
+
+/**选中样式*/
+.typeChecked{
+	color: #dddada;
+}
+
+/*选中后提示*/
+.this_tip{
+	width: 154px !important;
+	height: 65px !important;
+	position: absolute;
+	text-align: center;
+	line-height: 55px;
+	margin-left: -94px;
+	margin-top: -59px;
+	background: url(../img/this_tip.png) no-repeat;
+	display: none !important;
+	-moz-box-shadow:0px -6px 12px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow:0px -6px 12px rgba(0, 0, 0, 0.3);
+	box-shadow:0px -6px 12px rgba(0, 0, 0, 0.3);
+
+}
+.this_school{
+	cursor: pointer;
+	font-size: 14px;
+}
+.this_school:hover+.this_tip{
+	display: inline-block !important;
+}
+.grade_show>li>div:hover+.this_tip{
+	display: inline-block !important;
+
+}
+.teacher_show>li>div:hover+.this_tip{
+	display: inline-block !important;
+
+}
